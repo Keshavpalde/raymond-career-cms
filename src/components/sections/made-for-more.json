@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_made_for_mores",
+  "info": {
+    "displayName": "Made For More"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tabs": {
+      "type": "component",
+      "component": "sections.tabs",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

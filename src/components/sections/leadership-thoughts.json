@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_leadership_thoughts",
+  "info": {
+    "displayName": "Leadership Thoughts"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "leaderItem": {
+      "type": "component",
+      "component": "sections.leader-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

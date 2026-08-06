@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_cards",
+  "info": {
+    "displayName": "cards"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "stats",
+        "image"
+      ]
+    },
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "hoverContent": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "gray",
+        "red"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_life_at_raymond_realties",
+  "info": {
+    "displayName": "Life At Raymond Realty"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "galleryItems": {
+      "type": "component",
+      "component": "shared.gallery-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_content_items",
+  "info": {
+    "displayName": "Content Items"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "learnMoreText": {
+      "type": "string"
+    },
+    "learnMoreLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

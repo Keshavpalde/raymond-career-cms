@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_our_values_sections",
+  "info": {
+    "displayName": "Our Values Section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "leftImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ValueItem": {
+      "type": "component",
+      "component": "sections.category",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

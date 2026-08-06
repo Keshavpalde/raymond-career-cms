@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_sections_leader_items",
+  "info": {
+    "displayName": "Leader Item"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "expandedImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videoType": {
+      "type": "enumeration",
+      "enum": [
+        "youtube",
+        "upload"
+      ]
+    },
+    "youtubeUrl": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "expanded": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

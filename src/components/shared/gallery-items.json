@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_gallery_items",
+  "info": {
+    "displayName": "Gallery Items"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "altText": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "imageLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

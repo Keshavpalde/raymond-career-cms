@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "home.hero",
+      "repeatable": false
+    },
+    "statsSection": {
+      "type": "component",
+      "component": "sections.stats-section",
+      "repeatable": false
+    },
+    "ourValues": {
+      "type": "component",
+      "component": "sections.our-values-section",
+      "repeatable": false
+    },
+    "leadershipThoughts": {
+      "type": "component",
+      "component": "sections.leadership-thoughts",
+      "repeatable": false
+    },
+    "madeForMore": {
+      "type": "component",
+      "component": "sections.made-for-more",
+      "repeatable": false
+    },
+    "lifeAtRaymondRealty": {
+      "type": "component",
+      "component": "sections.life-at-raymond-realty",
+      "repeatable": false
+    }
+  }
+}

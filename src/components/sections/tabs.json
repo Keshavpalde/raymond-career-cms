@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_tabs",
+  "info": {
+    "displayName": "Tabs"
+  },
+  "options": {},
+  "attributes": {
+    "tabTitle": {
+      "type": "string"
+    },
+    "contentImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "activeByDefault": {
+      "type": "boolean"
+    },
+    "contentItems": {
+      "type": "component",
+      "component": "shared.content-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
