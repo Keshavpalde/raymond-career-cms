@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_social_links",
+  "info": {
+    "displayName": "Social Links"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "Instagram",
+        "Facebook",
+        "YouTube",
+        "X",
+        "LinkedIn"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "displayOrder": {
+      "type": "integer"
+    },
+    "newTab": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

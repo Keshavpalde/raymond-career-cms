@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_shared_employee_testimonial_items",
+  "info": {
+    "displayName": "Employee Testimonial Item"
+  },
+  "options": {},
+  "attributes": {
+    "employeeName": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "employeePhoto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quote": {
+      "type": "blocks"
+    },
+    "videoType": {
+      "type": "enumeration",
+      "enum": [
+        "youtube",
+        "uploaded"
+      ]
+    },
+    "youtubeUrl": {
+      "type": "string"
+    },
+    "uploadedVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "thumbnailImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "activeByDefault": {
+      "type": "boolean"
+    },
+    "displayOrder": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

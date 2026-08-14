@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_award_years",
+  "info": {
+    "displayName": "Award Year"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "activeByDefault": {
+      "type": "boolean"
+    },
+    "awards": {
+      "type": "component",
+      "component": "sections.awards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_awards",
+  "info": {
+    "displayName": "Awards"
+  },
+  "options": {},
+  "attributes": {
+    "awardImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "awardTitle": {
+      "type": "string"
+    },
+    "awardDescription": {
+      "type": "blocks"
+    },
+    "displayOrder": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_employee_testimonials",
+  "info": {
+    "displayName": "Employee Testimonials"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "sections.testimonials",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

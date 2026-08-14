@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ButtonCtaButton extends Struct.ComponentSchema {
+  collectionName: 'components_button_cta_buttons';
+  info: {
+    displayName: 'CTA Button';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface HomeHero extends Struct.ComponentSchema {
   collectionName: 'components_home_heroes';
   info: {
@@ -24,6 +35,43 @@ export interface SectionsActiveByDefault extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface SectionsAwardYears extends Struct.ComponentSchema {
+  collectionName: 'components_sections_award_years';
+  info: {
+    displayName: 'Award Years';
+  };
+  attributes: {
+    awardYear: Schema.Attribute.Component<'shared.award-year', false>;
+  };
+}
+
+export interface SectionsAwards extends Struct.ComponentSchema {
+  collectionName: 'components_sections_awards';
+  info: {
+    displayName: 'Awards';
+  };
+  attributes: {
+    awardDescription: Schema.Attribute.Blocks;
+    awardImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    awardTitle: Schema.Attribute.String;
+    displayOrder: Schema.Attribute.Integer;
+  };
+}
+
+export interface SectionsAwardsAndRecognition extends Struct.ComponentSchema {
+  collectionName: 'components_sections_awards_and_recognitions';
+  info: {
+    displayName: 'Awards And Recognition';
+  };
+  attributes: {
+    awardsYear: Schema.Attribute.Component<'shared.awards-year', true>;
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsCategory extends Struct.ComponentSchema {
   collectionName: 'components_sections_categories';
   info: {
@@ -33,6 +81,20 @@ export interface SectionsCategory extends Struct.ComponentSchema {
     description: Schema.Attribute.Blocks;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsEmployeeTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_sections_employee_testimonials';
+  info: {
+    displayName: 'Employee Testimonials';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    heading: Schema.Attribute.String;
+    testimonials: Schema.Attribute.Component<'sections.testimonials', true>;
   };
 }
 
@@ -120,6 +182,21 @@ export interface SectionsOurValuesSection extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsSocialLinks extends Struct.ComponentSchema {
+  collectionName: 'components_sections_social_links';
+  info: {
+    displayName: 'Social Links';
+  };
+  attributes: {
+    displayOrder: Schema.Attribute.Integer;
+    newTab: Schema.Attribute.Boolean;
+    platform: Schema.Attribute.Enumeration<
+      ['Instagram', 'Facebook', 'YouTube', 'X', 'LinkedIn']
+    >;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsStatsGrid extends Struct.ComponentSchema {
   collectionName: 'components_sections_stats_grids';
   info: {
@@ -157,6 +234,71 @@ export interface SectionsTabs extends Struct.ComponentSchema {
     >;
     contentItems: Schema.Attribute.Component<'shared.content-items', true>;
     tabTitle: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_sections_testimonials';
+  info: {
+    displayName: 'Testimonials';
+  };
+  attributes: {
+    activeByDefault: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    designation: Schema.Attribute.String;
+    displayOrder: Schema.Attribute.Integer;
+    employeeName: Schema.Attribute.String;
+    employeePhoto: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    quote: Schema.Attribute.Blocks;
+    thumbnailImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    uploadedVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    videoType: Schema.Attribute.Enumeration<['youtubeURL', 'uploadVideo']>;
+    youtubeUrl: Schema.Attribute.String;
+  };
+}
+
+export interface SharedAwardItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_award_items';
+  info: {
+    displayName: 'Award Item';
+  };
+  attributes: {
+    awardDescription: Schema.Attribute.Blocks;
+    awardImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    awardTitle: Schema.Attribute.String;
+    displayOrder: Schema.Attribute.Integer;
+  };
+}
+
+export interface SharedAwardYear extends Struct.ComponentSchema {
+  collectionName: 'components_shared_award_years';
+  info: {
+    displayName: 'Award Year';
+  };
+  attributes: {
+    activeByDefault: Schema.Attribute.Boolean;
+    awards: Schema.Attribute.Component<'sections.awards', true>;
+    year: Schema.Attribute.Integer;
+  };
+}
+
+export interface SharedAwardsYear extends Struct.ComponentSchema {
+  collectionName: 'components_shared_awards_years';
+  info: {
+    displayName: 'Awards Year';
+  };
+  attributes: {
+    activeByDefault: Schema.Attribute.Boolean;
+    awards: Schema.Attribute.Component<'sections.awards', true>;
+    year: Schema.Attribute.Integer;
   };
 }
 
@@ -199,6 +341,31 @@ export interface SharedContentItems extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedEmployeeTestimonialItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_employee_testimonial_items';
+  info: {
+    displayName: 'Employee Testimonial Item';
+  };
+  attributes: {
+    activeByDefault: Schema.Attribute.Boolean;
+    designation: Schema.Attribute.String;
+    displayOrder: Schema.Attribute.Integer;
+    employeeName: Schema.Attribute.String;
+    employeePhoto: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    quote: Schema.Attribute.Blocks;
+    thumbnailImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    uploadedVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    videoType: Schema.Attribute.Enumeration<['youtube', 'uploaded']>;
+    youtubeUrl: Schema.Attribute.String;
+  };
+}
+
 export interface SharedGalleryItems extends Struct.ComponentSchema {
   collectionName: 'components_shared_gallery_items';
   info: {
@@ -231,6 +398,20 @@ export interface SharedNavigationItem extends Struct.ComponentSchema {
   };
   attributes: {
     label: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavigationLink extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navigation_links';
+  info: {
+    displayName: 'Navigation Link';
+  };
+  attributes: {
+    column: Schema.Attribute.Enumeration<['Left', 'Right']>;
+    displayOrder: Schema.Attribute.Integer;
+    openInNewTab: Schema.Attribute.Boolean;
+    title: Schema.Attribute.String;
     url: Schema.Attribute.String;
   };
 }
@@ -304,24 +485,36 @@ export interface SharedStatsCard extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
+      'button.cta-button': ButtonCtaButton;
       'home.hero': HomeHero;
       'sections.active-by-default': SectionsActiveByDefault;
+      'sections.award-years': SectionsAwardYears;
+      'sections.awards': SectionsAwards;
+      'sections.awards-and-recognition': SectionsAwardsAndRecognition;
       'sections.category': SectionsCategory;
+      'sections.employee-testimonials': SectionsEmployeeTestimonials;
       'sections.gallery-items': SectionsGalleryItems;
       'sections.leader-item': SectionsLeaderItem;
       'sections.leadership-thoughts': SectionsLeadershipThoughts;
       'sections.life-at-raymond-realty': SectionsLifeAtRaymondRealty;
       'sections.made-for-more': SectionsMadeForMore;
       'sections.our-values-section': SectionsOurValuesSection;
+      'sections.social-links': SectionsSocialLinks;
       'sections.stats-grid': SectionsStatsGrid;
       'sections.stats-section': SectionsStatsSection;
       'sections.tabs': SectionsTabs;
+      'sections.testimonials': SectionsTestimonials;
+      'shared.award-item': SharedAwardItem;
+      'shared.award-year': SharedAwardYear;
+      'shared.awards-year': SharedAwardsYear;
       'shared.button': SharedButton;
       'shared.cards': SharedCards;
       'shared.content-items': SharedContentItems;
+      'shared.employee-testimonial-item': SharedEmployeeTestimonialItem;
       'shared.gallery-items': SharedGalleryItems;
       'shared.media': SharedMedia;
       'shared.navigation-item': SharedNavigationItem;
+      'shared.navigation-link': SharedNavigationLink;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

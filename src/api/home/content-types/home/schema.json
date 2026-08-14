@@ -40,6 +40,16 @@
       "type": "component",
       "component": "sections.life-at-raymond-realty",
       "repeatable": false
+    },
+    "employeeTestimonials": {
+      "type": "component",
+      "component": "sections.employee-testimonials",
+      "repeatable": false
+    },
+    "awardsAndRecognition": {
+      "type": "component",
+      "component": "sections.awards-and-recognition",
+      "repeatable": false
     }
   }
 }
