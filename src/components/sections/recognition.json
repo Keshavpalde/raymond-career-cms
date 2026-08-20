@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_recognitions",
+  "info": {
+    "displayName": "Recognition"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "recognitionItems": {
+      "type": "component",
+      "component": "sections.recognition-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

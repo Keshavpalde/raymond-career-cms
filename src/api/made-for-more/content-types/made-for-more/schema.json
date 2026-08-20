@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "made_for_mores",
+  "info": {
+    "singularName": "made-for-more",
+    "pluralName": "made-for-mores",
+    "displayName": "Made for More"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "madeForMoreHero": {
+      "type": "component",
+      "component": "sections.hero",
+      "repeatable": false
+    },
+    "madeForMoreIntro": {
+      "type": "component",
+      "component": "sections.made-for-more-intro",
+      "repeatable": false
+    },
+    "learnAndGrow": {
+      "type": "component",
+      "component": "sections.learn-and-grow",
+      "repeatable": false
+    },
+    "recognition": {
+      "type": "component",
+      "component": "sections.recognition",
+      "repeatable": false
+    },
+    "wellbeingFirst": {
+      "type": "component",
+      "component": "sections.wellbeing-first",
+      "repeatable": false
+    },
+    "beyondWork": {
+      "type": "component",
+      "component": "sections.beyond-work",
+      "repeatable": false
+    },
+    "celebrations": {
+      "type": "component",
+      "component": "shared.celebrations",
+      "repeatable": false
+    },
+    "activities": {
+      "type": "component",
+      "component": "sections.activities",
+      "repeatable": false
+    }
+  }
+}

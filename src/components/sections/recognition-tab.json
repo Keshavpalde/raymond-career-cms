@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_recognition_tabs",
+  "info": {
+    "displayName": "Recognition Tab"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "component",
+      "component": "sections.images",
+      "repeatable": true
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

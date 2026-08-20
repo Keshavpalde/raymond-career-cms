@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_images",
+  "info": {
+    "displayName": "images"
+  },
+  "options": {},
+  "attributes": {
+    "learnAndGrowImage": {
+      "type": "component",
+      "component": "sections.recognition-image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

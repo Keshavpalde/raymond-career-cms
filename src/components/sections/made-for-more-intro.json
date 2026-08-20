@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_made_for_more_intros",
+  "info": {
+    "displayName": "Made For More Intro"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

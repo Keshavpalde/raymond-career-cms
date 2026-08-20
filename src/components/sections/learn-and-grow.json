@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_learn_and_grows",
+  "info": {
+    "displayName": "Learn & Grow"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "learnAndGrowTabs": {
+      "type": "component",
+      "component": "sections.new-tabs",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

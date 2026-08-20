@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_new_tabs",
+  "info": {
+    "displayName": "New Tabs"
+  },
+  "options": {},
+  "attributes": {
+    "learnAndGrowTabs": {
+      "type": "component",
+      "component": "sections.recognition-tab",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

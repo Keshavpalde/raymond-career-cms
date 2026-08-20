@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_wellbeing_slide_news",
+  "info": {
+    "displayName": "Wellbeing Slide New"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

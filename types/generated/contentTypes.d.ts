@@ -718,6 +718,47 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiMadeForMoreMadeForMore extends Struct.SingleTypeSchema {
+  collectionName: 'made_for_mores';
+  info: {
+    displayName: 'Made for More';
+    pluralName: 'made-for-mores';
+    singularName: 'made-for-more';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    activities: Schema.Attribute.Component<'sections.activities', false>;
+    beyondWork: Schema.Attribute.Component<'sections.beyond-work', false>;
+    celebrations: Schema.Attribute.Component<'shared.celebrations', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    learnAndGrow: Schema.Attribute.Component<'sections.learn-and-grow', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::made-for-more.made-for-more'
+    > &
+      Schema.Attribute.Private;
+    madeForMoreHero: Schema.Attribute.Component<'sections.hero', false>;
+    madeForMoreIntro: Schema.Attribute.Component<
+      'sections.made-for-more-intro',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    recognition: Schema.Attribute.Component<'sections.recognition', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    wellbeingFirst: Schema.Attribute.Component<
+      'sections.wellbeing-first',
+      false
+    >;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1237,6 +1278,7 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::header.header': ApiHeaderHeader;
       'api::home.home': ApiHomeHome;
+      'api::made-for-more.made-for-more': ApiMadeForMoreMadeForMore;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

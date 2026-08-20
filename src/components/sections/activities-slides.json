@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_activities_slides",
+  "info": {
+    "displayName": "Activities Slides"
+  },
+  "options": {},
+  "attributes": {
+    "activitySlide": {
+      "type": "component",
+      "component": "sections.activity-slide",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

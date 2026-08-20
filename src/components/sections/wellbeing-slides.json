@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_wellbeing_slides",
+  "info": {
+    "displayName": "Wellbeing Slides"
+  },
+  "options": {},
+  "attributes": {
+    "wellbeingSlide": {
+      "type": "component",
+      "component": "sections.wellbeing-slide-new",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

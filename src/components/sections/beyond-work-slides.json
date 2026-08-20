@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_beyond_work_slides",
+  "info": {
+    "displayName": "beyondWorkSlides"
+  },
+  "options": {},
+  "attributes": {
+    "beyondWorkSlideNew": {
+      "type": "component",
+      "component": "sections.beyond-work-slide-new",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

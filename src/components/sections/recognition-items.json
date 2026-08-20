@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_recognition_items",
+  "info": {
+    "displayName": "Recognition Items"
+  },
+  "options": {},
+  "attributes": {
+    "recognitionItemNew": {
+      "type": "component",
+      "component": "sections.recognition-item-new",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
