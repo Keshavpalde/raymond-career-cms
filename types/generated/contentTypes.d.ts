@@ -718,6 +718,58 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiLifeAtRaymondRealtyLifeAtRaymondRealty
+  extends Struct.SingleTypeSchema {
+  collectionName: 'life_at_raymond_realties';
+  info: {
+    displayName: 'Life at Raymond Realty';
+    pluralName: 'life-at-raymond-realties';
+    singularName: 'life-at-raymond-realty';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    glimpseIntoOurWorld: Schema.Attribute.Component<
+      'sections.glimpse-into-our-world',
+      false
+    >;
+    growthEnvironment: Schema.Attribute.Component<
+      'sections.growth-environment',
+      false
+    >;
+    insideOurWorkplace: Schema.Attribute.Component<
+      'sections.inside-our-workplace',
+      false
+    >;
+    lifeAtRaymondHero: Schema.Attribute.Component<
+      'sections.life-at-raymond-hero',
+      false
+    >;
+    lifeBeyondJobTitle: Schema.Attribute.Component<
+      'sections.life-beyond-job-title',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::life-at-raymond-realty.life-at-raymond-realty'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    storiesThatInspire: Schema.Attribute.Component<
+      'sections.stories-that-inspire',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMadeForMoreMadeForMore extends Struct.SingleTypeSchema {
   collectionName: 'made_for_mores';
   info: {
@@ -1278,6 +1330,7 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::header.header': ApiHeaderHeader;
       'api::home.home': ApiHomeHome;
+      'api::life-at-raymond-realty.life-at-raymond-realty': ApiLifeAtRaymondRealtyLifeAtRaymondRealty;
       'api::made-for-more.made-for-more': ApiMadeForMoreMadeForMore;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

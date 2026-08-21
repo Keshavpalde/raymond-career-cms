@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_growth_items",
+  "info": {
+    "displayName": "growthItems"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

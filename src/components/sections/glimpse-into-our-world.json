@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_glimpse_into_our_worlds",
+  "info": {
+    "displayName": "Glimpse Into Our World"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "glimpseItem": {
+      "type": "component",
+      "component": "sections.glimpse-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

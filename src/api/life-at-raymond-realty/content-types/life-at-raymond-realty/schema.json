@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "life_at_raymond_realties",
+  "info": {
+    "singularName": "life-at-raymond-realty",
+    "pluralName": "life-at-raymond-realties",
+    "displayName": "Life at Raymond Realty"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lifeAtRaymondHero": {
+      "type": "component",
+      "component": "sections.life-at-raymond-hero",
+      "repeatable": false
+    },
+    "insideOurWorkplace": {
+      "type": "component",
+      "component": "sections.inside-our-workplace",
+      "repeatable": false
+    },
+    "lifeBeyondJobTitle": {
+      "type": "component",
+      "component": "sections.life-beyond-job-title",
+      "repeatable": false
+    },
+    "glimpseIntoOurWorld": {
+      "type": "component",
+      "component": "sections.glimpse-into-our-world",
+      "repeatable": false
+    },
+    "storiesThatInspire": {
+      "type": "component",
+      "component": "sections.stories-that-inspire",
+      "repeatable": false
+    },
+    "growthEnvironment": {
+      "type": "component",
+      "component": "sections.growth-environment",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_life_at_raymond_heroes",
+  "info": {
+    "displayName": "Life At Raymond Hero"
+  },
+  "options": {},
+  "attributes": {
+    "backgroundVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

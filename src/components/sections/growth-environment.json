@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_growth_environments",
+  "info": {
+    "displayName": "Growth Environment"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "growthItems": {
+      "type": "component",
+      "component": "sections.growth-items",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quote": {
+      "type": "string"
+    },
+    "quoteBy": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

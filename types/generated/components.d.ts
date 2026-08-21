@@ -189,6 +189,59 @@ export interface SectionsGalleryItems extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface SectionsGlimpseIntoOurWorld extends Struct.ComponentSchema {
+  collectionName: 'components_sections_glimpse_into_our_worlds';
+  info: {
+    displayName: 'Glimpse Into Our World';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    glimpseItem: Schema.Attribute.Component<'sections.glimpse-item', true>;
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsGlimpseItem extends Struct.ComponentSchema {
+  collectionName: 'components_sections_glimpse_items';
+  info: {
+    displayName: 'Glimpse Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    galleryImages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsGrowthEnvironment extends Struct.ComponentSchema {
+  collectionName: 'components_sections_growth_environments';
+  info: {
+    displayName: 'Growth Environment';
+  };
+  attributes: {
+    growthItems: Schema.Attribute.Component<'sections.growth-items', true>;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    quote: Schema.Attribute.String;
+    quoteBy: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsGrowthItems extends Struct.ComponentSchema {
+  collectionName: 'components_sections_growth_items';
+  info: {
+    displayName: 'growthItems';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsHero extends Struct.ComponentSchema {
   collectionName: 'components_sections_heroes';
   info: {
@@ -216,10 +269,33 @@ export interface SectionsImages extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsInsideOurWorkplace extends Struct.ComponentSchema {
+  collectionName: 'components_sections_inside_our_workplaces';
+  info: {
+    displayName: 'Inside Our Workplace';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    workplaceItems: Schema.Attribute.Component<
+      'sections.workplace-items',
+      true
+    >;
+  };
+}
+
 export interface SectionsItems extends Struct.ComponentSchema {
   collectionName: 'components_sections_items';
   info: {
     displayName: 'items';
+  };
+  attributes: {};
+}
+
+export interface SectionsJoinOurTeam extends Struct.ComponentSchema {
+  collectionName: 'components_sections_join_our_teams';
+  info: {
+    displayName: 'Join Our Team';
   };
   attributes: {};
 }
@@ -279,6 +355,20 @@ export interface SectionsLearnAndGrowItem extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface SectionsLifeAtRaymondHero extends Struct.ComponentSchema {
+  collectionName: 'components_sections_life_at_raymond_heroes';
+  info: {
+    displayName: 'Life At Raymond Hero';
+  };
+  attributes: {
+    backgroundVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsLifeAtRaymondRealty extends Struct.ComponentSchema {
   collectionName: 'components_sections_life_at_raymond_realties';
   info: {
@@ -289,6 +379,32 @@ export interface SectionsLifeAtRaymondRealty extends Struct.ComponentSchema {
     buttonText: Schema.Attribute.String;
     galleryItems: Schema.Attribute.Component<'shared.gallery-items', true>;
     heading: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsLifeBeyondItems extends Struct.ComponentSchema {
+  collectionName: 'components_sections_life_beyond_items';
+  info: {
+    displayName: 'lifeBeyondItems';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsLifeBeyondJobTitle extends Struct.ComponentSchema {
+  collectionName: 'components_sections_life_beyond_job_titles';
+  info: {
+    displayName: 'Life Beyond Job Title';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    lifeBeyondItems: Schema.Attribute.Component<
+      'sections.life-beyond-items',
+      true
+    >;
   };
 }
 
@@ -446,6 +562,31 @@ export interface SectionsStatsSection extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsStoriesThatInspire extends Struct.ComponentSchema {
+  collectionName: 'components_sections_stories_that_inspires';
+  info: {
+    displayName: 'Stories That Inspire';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    storyItems: Schema.Attribute.Component<'sections.story-items', true>;
+  };
+}
+
+export interface SectionsStoryItems extends Struct.ComponentSchema {
+  collectionName: 'components_sections_story_items';
+  info: {
+    displayName: 'Story Items';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    designation: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsTabs extends Struct.ComponentSchema {
   collectionName: 'components_sections_tabs';
   info: {
@@ -527,6 +668,17 @@ export interface SectionsWellbeingSlides extends Struct.ComponentSchema {
       'sections.wellbeing-slide-new',
       false
     >;
+  };
+}
+
+export interface SectionsWorkplaceItems extends Struct.ComponentSchema {
+  collectionName: 'components_sections_workplace_items';
+  info: {
+    displayName: 'Workplace Items';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -782,14 +934,23 @@ declare module '@strapi/strapi' {
       'sections.category': SectionsCategory;
       'sections.employee-testimonials': SectionsEmployeeTestimonials;
       'sections.gallery-items': SectionsGalleryItems;
+      'sections.glimpse-into-our-world': SectionsGlimpseIntoOurWorld;
+      'sections.glimpse-item': SectionsGlimpseItem;
+      'sections.growth-environment': SectionsGrowthEnvironment;
+      'sections.growth-items': SectionsGrowthItems;
       'sections.hero': SectionsHero;
       'sections.images': SectionsImages;
+      'sections.inside-our-workplace': SectionsInsideOurWorkplace;
       'sections.items': SectionsItems;
+      'sections.join-our-team': SectionsJoinOurTeam;
       'sections.leader-item': SectionsLeaderItem;
       'sections.leadership-thoughts': SectionsLeadershipThoughts;
       'sections.learn-and-grow': SectionsLearnAndGrow;
       'sections.learn-and-grow-item': SectionsLearnAndGrowItem;
+      'sections.life-at-raymond-hero': SectionsLifeAtRaymondHero;
       'sections.life-at-raymond-realty': SectionsLifeAtRaymondRealty;
+      'sections.life-beyond-items': SectionsLifeBeyondItems;
+      'sections.life-beyond-job-title': SectionsLifeBeyondJobTitle;
       'sections.made-for-more': SectionsMadeForMore;
       'sections.made-for-more-intro': SectionsMadeForMoreIntro;
       'sections.new-tabs': SectionsNewTabs;
@@ -802,11 +963,14 @@ declare module '@strapi/strapi' {
       'sections.social-links': SectionsSocialLinks;
       'sections.stats-grid': SectionsStatsGrid;
       'sections.stats-section': SectionsStatsSection;
+      'sections.stories-that-inspire': SectionsStoriesThatInspire;
+      'sections.story-items': SectionsStoryItems;
       'sections.tabs': SectionsTabs;
       'sections.testimonials': SectionsTestimonials;
       'sections.wellbeing-first': SectionsWellbeingFirst;
       'sections.wellbeing-slide-new': SectionsWellbeingSlideNew;
       'sections.wellbeing-slides': SectionsWellbeingSlides;
+      'sections.workplace-items': SectionsWorkplaceItems;
       'shared.award-item': SharedAwardItem;
       'shared.award-year': SharedAwardYear;
       'shared.awards-year': SharedAwardsYear;

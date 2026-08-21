@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_life_beyond_job_titles",
+  "info": {
+    "displayName": "Life Beyond Job Title"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "lifeBeyondItems": {
+      "type": "component",
+      "component": "sections.life-beyond-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
