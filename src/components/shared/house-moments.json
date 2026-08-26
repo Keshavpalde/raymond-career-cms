@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_house_moments",
+  "info": {
+    "displayName": "House Moments"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "moments": {
+      "type": "component",
+      "component": "shared.moments",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

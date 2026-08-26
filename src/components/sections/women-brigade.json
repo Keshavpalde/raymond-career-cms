@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_women_brigades",
+  "info": {
+    "displayName": "Women Brigade"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "points": {
+      "type": "component",
+      "component": "sections.points",
+      "repeatable": true
+    },
+    "Gif": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

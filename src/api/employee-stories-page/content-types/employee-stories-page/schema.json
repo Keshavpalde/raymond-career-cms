@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "employee_stories_pages",
+  "info": {
+    "singularName": "employee-stories-page",
+    "pluralName": "employee-stories-pages",
+    "displayName": "Employee Stories Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "employeeStoriesHero": {
+      "type": "component",
+      "component": "sections.employee-stories-hero",
+      "repeatable": false
+    },
+    "employeeStories": {
+      "type": "component",
+      "component": "sections.employee-stories",
+      "repeatable": false
+    }
+  }
+}

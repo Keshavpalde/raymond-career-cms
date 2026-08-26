@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_meet_the_houses",
+  "info": {
+    "displayName": "Meet The Houses"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "houses": {
+      "type": "component",
+      "component": "sections.houses",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

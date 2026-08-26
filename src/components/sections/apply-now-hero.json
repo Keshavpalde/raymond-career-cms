@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_apply_now_heroes",
+  "info": {
+    "displayName": "Apply Now Hero"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,136 @@
+﻿{
+    "id":  19,
+    "documentId":  "h55ilwy3phqetqhn4dwhzh00",
+    "createdAt":  "2026-08-18T05:58:34.805Z",
+    "updatedAt":  "2026-08-19T13:44:10.935Z",
+    "publishedAt":  "2026-08-19T13:44:11.158Z",
+    "madeForMoreHero":  {
+                            "id":  19,
+                            "heading":  "Where Careers Become Journeys",
+                            "description":  [
+                                                {
+                                                    "type":  "paragraph",
+                                                    "children":  [
+                                                                     {
+                                                                         "type":  "text",
+                                                                         "text":  "At Raymond Realty, every opportunity is designed to help you learn, grow, and thrive. Join a culture where your potential is recognized, nurtured, and celebrated every day."
+                                                                     }
+                                                                 ]
+                                                }
+                                            ]
+                        },
+    "madeForMoreIntro":  {
+                             "id":  17,
+                             "heading":  "MADE FOR MORE",
+                             "description":  [
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "children":  [
+                                                                      {
+                                                                          "type":  "text",
+                                                                          "text":  "At Raymond Realty, growth is about more than career progression—it\u0027s about continuous learning, meaningful recognition, personal wellbeing, and creating opportunities to thrive. We believe every employee deserves an environment where they feel valued, empowered, and inspired to achieve their full potential."
+                                                                      }
+                                                                  ]
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "children":  [
+                                                                      {
+                                                                          "type":  "text",
+                                                                          "text":  "As a Great Place to Work®, we nurture a culture where every contribution matters and every individual is encouraged to become #MadeForMore."
+                                                                      }
+                                                                  ]
+                                                 }
+                                             ]
+                         },
+    "learnAndGrow":  {
+                         "id":  16,
+                         "heading":  "Learn \u0026 Grow",
+                         "description":  [
+                                             {
+                                                 "type":  "paragraph",
+                                                 "children":  [
+                                                                  {
+                                                                      "type":  "text",
+                                                                      "text":  "A hundred years of expertise doesn\u0027t stay in a training manual, it gets passed down, project by project, person to person."
+                                                                  }
+                                                              ]
+                                             }
+                                         ]
+                     },
+    "recognition":  {
+                        "id":  10,
+                        "heading":  "Recognition",
+                        "description":  [
+                                            {
+                                                "type":  "paragraph",
+                                                "children":  [
+                                                                 {
+                                                                     "type":  "text",
+                                                                     "text":  "Good work doesn\u0027t sit quietly here, it gets applauded, out loud, in front of the people who matter."
+                                                                 }
+                                                             ]
+                                            }
+                                        ]
+                    },
+    "wellbeingFirst":  {
+                           "id":  8,
+                           "heading":  "Wellbeing First",
+                           "description":  [
+                                               {
+                                                   "type":  "paragraph",
+                                                   "children":  [
+                                                                    {
+                                                                        "type":  "text",
+                                                                        "text":  "Because you show up for the work every single day, we make sure there\u0027s always something in place to show up for you, right back. "
+                                                                    }
+                                                                ]
+                                               }
+                                           ]
+                       },
+    "beyondWork":  {
+                       "id":  7,
+                       "heading":  "Beyond Work",
+                       "description":  [
+                                           {
+                                               "type":  "paragraph",
+                                               "children":  [
+                                                                {
+                                                                    "type":  "text",
+                                                                    "text":  "Because life doesn\u0027t pause at your desk, and neither does the care that follows you through it. "
+                                                                }
+                                                            ]
+                                           }
+                                       ]
+                   },
+    "celebrations":  {
+                         "id":  5,
+                         "heading":  "Celebrations",
+                         "description":  [
+                                             {
+                                                 "type":  "paragraph",
+                                                 "children":  [
+                                                                  {
+                                                                      "type":  "text",
+                                                                      "text":  "Some days are for targets, and some days are just for showing up as people, together."
+                                                                  }
+                                                              ]
+                                             }
+                                         ]
+                     },
+    "activities":  {
+                       "id":  2,
+                       "heading":  "Activities",
+                       "description":  [
+                                           {
+                                               "type":  "paragraph",
+                                               "children":  [
+                                                                {
+                                                                    "type":  "text",
+                                                                    "text":  "Not every win here comes with a target attached, some just come with a trophy and a lot of noise on the field."
+                                                                }
+                                                            ]
+                                           }
+                                       ]
+                   }
+}

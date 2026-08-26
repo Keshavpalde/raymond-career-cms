@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_find_your_opportunities",
+  "info": {
+    "displayName": "Find Your Opportunity"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

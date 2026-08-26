@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_employee_stories",
+  "info": {
+    "displayName": "Employee Stories"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "stories": {
+      "type": "component",
+      "component": "sections.stories",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

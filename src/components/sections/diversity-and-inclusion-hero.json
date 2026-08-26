@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_diversity_and_inclusion_heroes",
+  "info": {
+    "displayName": "Diversity & Inclusion Hero"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

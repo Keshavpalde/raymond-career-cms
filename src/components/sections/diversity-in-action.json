@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_diversity_in_actions",
+  "info": {
+    "displayName": "Diversity In Action"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "initiatives": {
+      "type": "component",
+      "component": "sections.initiatives",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

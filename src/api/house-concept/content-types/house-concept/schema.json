@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "house_concepts",
+  "info": {
+    "singularName": "house-concept",
+    "pluralName": "house-concepts",
+    "displayName": "House Concept"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "houseConceptHero": {
+      "type": "component",
+      "component": "sections.house-concept-page",
+      "repeatable": false
+    },
+    "houseConcept": {
+      "type": "component",
+      "component": "sections.house-concept",
+      "repeatable": false
+    },
+    "meetTheHouses": {
+      "type": "component",
+      "component": "sections.meet-the-houses",
+      "repeatable": false
+    },
+    "houseMoments": {
+      "type": "component",
+      "component": "shared.house-moments",
+      "repeatable": false
+    }
+  }
+}

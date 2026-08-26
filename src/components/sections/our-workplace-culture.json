@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_our_workplace_cultures",
+  "info": {
+    "displayName": "Our Workplace Culture"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "slides": {
+      "type": "component",
+      "component": "sections.slides",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

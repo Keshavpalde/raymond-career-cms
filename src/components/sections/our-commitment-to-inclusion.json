@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_our_commitment_to_inclusions",
+  "info": {
+    "displayName": "Our Commitment To Inclusion"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "principles": {
+      "type": "component",
+      "component": "sections.principles",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

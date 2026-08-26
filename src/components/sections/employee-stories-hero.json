@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_employee_stories_heroes",
+  "info": {
+    "displayName": "Employee Stories Hero"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

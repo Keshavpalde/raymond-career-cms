@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "apply_nows",
+  "info": {
+    "singularName": "apply-now",
+    "pluralName": "apply-nows",
+    "displayName": "Apply Now"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "applyNowHero": {
+      "type": "component",
+      "component": "sections.apply-now-hero",
+      "repeatable": false
+    },
+    "findYourOpportunity": {
+      "type": "component",
+      "component": "sections.find-your-opportunity",
+      "repeatable": false
+    }
+  }
+}

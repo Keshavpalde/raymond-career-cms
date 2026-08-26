@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "diversity_and_inclusions",
+  "info": {
+    "singularName": "diversity-and-inclusion",
+    "pluralName": "diversity-and-inclusions",
+    "displayName": "Diversity & Inclusion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "diversityInclusionHero": {
+      "type": "component",
+      "component": "sections.diversity-and-inclusion-hero",
+      "repeatable": false
+    },
+    "ourCommitmentToInclusion": {
+      "type": "component",
+      "component": "sections.our-commitment-to-inclusion",
+      "repeatable": false
+    },
+    "diversityInAction": {
+      "type": "component",
+      "component": "sections.diversity-in-action",
+      "repeatable": false
+    },
+    "womenBrigade": {
+      "type": "component",
+      "component": "sections.women-brigade",
+      "repeatable": false
+    },
+    "diversityStatistics": {
+      "type": "component",
+      "component": "sections.diversity-statistics",
+      "repeatable": false
+    },
+    "OurWorkplaceCulture": {
+      "type": "component",
+      "component": "sections.our-workplace-culture",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_diversity_statistics",
+  "info": {
+    "displayName": "Diversity Statistics"
+  },
+  "options": {},
+  "attributes": {
+    "statistics": {
+      "type": "component",
+      "component": "sections.statistics",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

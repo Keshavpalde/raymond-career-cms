@@ -472,6 +472,38 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiApplyNowApplyNow extends Struct.SingleTypeSchema {
+  collectionName: 'apply_nows';
+  info: {
+    displayName: 'Apply Now';
+    pluralName: 'apply-nows';
+    singularName: 'apply-now';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    applyNowHero: Schema.Attribute.Component<'sections.apply-now-hero', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    findYourOpportunity: Schema.Attribute.Component<
+      'sections.find-your-opportunity',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::apply-now.apply-now'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   collectionName: 'articles';
   info: {
@@ -570,6 +602,91 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiDiversityAndInclusionDiversityAndInclusion
+  extends Struct.SingleTypeSchema {
+  collectionName: 'diversity_and_inclusions';
+  info: {
+    displayName: 'Diversity & Inclusion';
+    pluralName: 'diversity-and-inclusions';
+    singularName: 'diversity-and-inclusion';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    diversityInAction: Schema.Attribute.Component<
+      'sections.diversity-in-action',
+      false
+    >;
+    diversityInclusionHero: Schema.Attribute.Component<
+      'sections.diversity-and-inclusion-hero',
+      false
+    >;
+    diversityStatistics: Schema.Attribute.Component<
+      'sections.diversity-statistics',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::diversity-and-inclusion.diversity-and-inclusion'
+    > &
+      Schema.Attribute.Private;
+    ourCommitmentToInclusion: Schema.Attribute.Component<
+      'sections.our-commitment-to-inclusion',
+      false
+    >;
+    OurWorkplaceCulture: Schema.Attribute.Component<
+      'sections.our-workplace-culture',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    womenBrigade: Schema.Attribute.Component<'sections.women-brigade', false>;
+  };
+}
+
+export interface ApiEmployeeStoriesPageEmployeeStoriesPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'employee_stories_pages';
+  info: {
+    displayName: 'Employee Stories Page';
+    pluralName: 'employee-stories-pages';
+    singularName: 'employee-stories-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    employeeStories: Schema.Attribute.Component<
+      'sections.employee-stories',
+      false
+    >;
+    employeeStoriesHero: Schema.Attribute.Component<
+      'sections.employee-stories-hero',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::employee-stories-page.employee-stories-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -715,6 +832,80 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHouseConceptHouseConcept extends Struct.SingleTypeSchema {
+  collectionName: 'house_concepts';
+  info: {
+    displayName: 'House Concept';
+    pluralName: 'house-concepts';
+    singularName: 'house-concept';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    houseConcept: Schema.Attribute.Component<'sections.house-concept', false>;
+    houseConceptHero: Schema.Attribute.Component<
+      'sections.house-concept-page',
+      false
+    >;
+    houseMoments: Schema.Attribute.Component<'shared.house-moments', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::house-concept.house-concept'
+    > &
+      Schema.Attribute.Private;
+    meetTheHouses: Schema.Attribute.Component<
+      'sections.meet-the-houses',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiJobOpeningJobOpening extends Struct.CollectionTypeSchema {
+  collectionName: 'job_openings';
+  info: {
+    displayName: 'Job Opening';
+    pluralName: 'job-openings';
+    singularName: 'job-opening';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    atsUrl: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    department: Schema.Attribute.String;
+    employmentType: Schema.Attribute.Enumeration<
+      ['Full Time', 'Part Time', 'Contract', 'Internship']
+    >;
+    experience: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::job-opening.job-opening'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    postedOn: Schema.Attribute.Date;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    workMode: Schema.Attribute.Enumeration<['On-site', 'Hybrid', 'Remote']>;
   };
 }
 
@@ -1323,13 +1514,18 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
+      'api::apply-now.apply-now': ApiApplyNowApplyNow;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::diversity-and-inclusion.diversity-and-inclusion': ApiDiversityAndInclusionDiversityAndInclusion;
+      'api::employee-stories-page.employee-stories-page': ApiEmployeeStoriesPageEmployeeStoriesPage;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::header.header': ApiHeaderHeader;
       'api::home.home': ApiHomeHome;
+      'api::house-concept.house-concept': ApiHouseConceptHouseConcept;
+      'api::job-opening.job-opening': ApiJobOpeningJobOpening;
       'api::life-at-raymond-realty.life-at-raymond-realty': ApiLifeAtRaymondRealtyLifeAtRaymondRealty;
       'api::made-for-more.made-for-more': ApiMadeForMoreMadeForMore;
       'plugin::content-releases.release': PluginContentReleasesRelease;

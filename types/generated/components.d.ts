@@ -75,6 +75,17 @@ export interface SectionsActivitySlide extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsApplyNowHero extends Struct.ComponentSchema {
+  collectionName: 'components_sections_apply_now_heroes';
+  info: {
+    displayName: 'Apply Now Hero';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface SectionsAwardYears extends Struct.ComponentSchema {
   collectionName: 'components_sections_award_years';
   info: {
@@ -167,6 +178,64 @@ export interface SectionsCategory extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsDiversityAndInclusionHero
+  extends Struct.ComponentSchema {
+  collectionName: 'components_sections_diversity_and_inclusion_heroes';
+  info: {
+    displayName: 'Diversity & Inclusion Hero';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SectionsDiversityInAction extends Struct.ComponentSchema {
+  collectionName: 'components_sections_diversity_in_actions';
+  info: {
+    displayName: 'Diversity In Action';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    initiatives: Schema.Attribute.Component<'sections.initiatives', true>;
+  };
+}
+
+export interface SectionsDiversityStatistics extends Struct.ComponentSchema {
+  collectionName: 'components_sections_diversity_statistics';
+  info: {
+    displayName: 'Diversity Statistics';
+  };
+  attributes: {
+    statistics: Schema.Attribute.Component<'sections.statistics', true>;
+  };
+}
+
+export interface SectionsEmployeeStories extends Struct.ComponentSchema {
+  collectionName: 'components_sections_employee_stories';
+  info: {
+    displayName: 'Employee Stories';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    stories: Schema.Attribute.Component<'sections.stories', true>;
+  };
+}
+
+export interface SectionsEmployeeStoriesHero extends Struct.ComponentSchema {
+  collectionName: 'components_sections_employee_stories_heroes';
+  info: {
+    displayName: 'Employee Stories Hero';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface SectionsEmployeeTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_sections_employee_testimonials';
   info: {
@@ -178,6 +247,17 @@ export interface SectionsEmployeeTestimonials extends Struct.ComponentSchema {
     >;
     heading: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<'sections.testimonials', true>;
+  };
+}
+
+export interface SectionsFindYourOpportunity extends Struct.ComponentSchema {
+  collectionName: 'components_sections_find_your_opportunities';
+  info: {
+    displayName: 'Find Your Opportunity';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
   };
 }
 
@@ -256,6 +336,45 @@ export interface SectionsHero extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsHouseConcept extends Struct.ComponentSchema {
+  collectionName: 'components_sections_house_concepts';
+  info: {
+    displayName: 'House Concept';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SectionsHouseConceptPage extends Struct.ComponentSchema {
+  collectionName: 'components_sections_house_concept_pages';
+  info: {
+    displayName: 'House Concept Page';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    overlay: Schema.Attribute.Boolean;
+  };
+}
+
+export interface SectionsHouses extends Struct.ComponentSchema {
+  collectionName: 'components_sections_houses';
+  info: {
+    displayName: 'houses';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsImages extends Struct.ComponentSchema {
   collectionName: 'components_sections_images';
   info: {
@@ -266,6 +385,18 @@ export interface SectionsImages extends Struct.ComponentSchema {
       'sections.recognition-image',
       false
     >;
+  };
+}
+
+export interface SectionsInitiatives extends Struct.ComponentSchema {
+  collectionName: 'components_sections_initiatives';
+  info: {
+    displayName: 'initiatives';
+  };
+  attributes: {
+    hoverText: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -434,6 +565,18 @@ export interface SectionsMadeForMoreIntro extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsMeetTheHouses extends Struct.ComponentSchema {
+  collectionName: 'components_sections_meet_the_houses';
+  info: {
+    displayName: 'Meet The Houses';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    houses: Schema.Attribute.Component<'sections.houses', true>;
+  };
+}
+
 export interface SectionsNewTabs extends Struct.ComponentSchema {
   collectionName: 'components_sections_new_tabs';
   info: {
@@ -447,6 +590,19 @@ export interface SectionsNewTabs extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsOurCommitmentToInclusion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_sections_our_commitment_to_inclusions';
+  info: {
+    displayName: 'Our Commitment To Inclusion';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    principles: Schema.Attribute.Component<'sections.principles', true>;
+  };
+}
+
 export interface SectionsOurValuesSection extends Struct.ComponentSchema {
   collectionName: 'components_sections_our_values_sections';
   info: {
@@ -457,6 +613,40 @@ export interface SectionsOurValuesSection extends Struct.ComponentSchema {
     leftImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     subHeading: Schema.Attribute.String;
     ValueItem: Schema.Attribute.Component<'sections.category', true>;
+  };
+}
+
+export interface SectionsOurWorkplaceCulture extends Struct.ComponentSchema {
+  collectionName: 'components_sections_our_workplace_cultures';
+  info: {
+    displayName: 'Our Workplace Culture';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    slides: Schema.Attribute.Component<'sections.slides', true>;
+  };
+}
+
+export interface SectionsPoints extends Struct.ComponentSchema {
+  collectionName: 'components_sections_points';
+  info: {
+    displayName: 'Points';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsPrinciples extends Struct.ComponentSchema {
+  collectionName: 'components_sections_principles';
+  info: {
+    displayName: 'Principles';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -522,6 +712,17 @@ export interface SectionsRecognitionTab extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsSlides extends Struct.ComponentSchema {
+  collectionName: 'components_sections_slides';
+  info: {
+    displayName: 'Slides';
+  };
+  attributes: {
+    media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    mediaType: Schema.Attribute.Enumeration<['image', 'video']>;
+  };
+}
+
 export interface SectionsSocialLinks extends Struct.ComponentSchema {
   collectionName: 'components_sections_social_links';
   info: {
@@ -534,6 +735,17 @@ export interface SectionsSocialLinks extends Struct.ComponentSchema {
       ['Instagram', 'Facebook', 'YouTube', 'X', 'LinkedIn']
     >;
     url: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsStatistics extends Struct.ComponentSchema {
+  collectionName: 'components_sections_statistics';
+  info: {
+    displayName: 'Statistics';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    number: Schema.Attribute.String;
   };
 }
 
@@ -559,6 +771,23 @@ export interface SectionsStatsSection extends Struct.ComponentSchema {
   attributes: {
     cards: Schema.Attribute.Component<'shared.cards', true>;
     heading: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsStories extends Struct.ComponentSchema {
+  collectionName: 'components_sections_stories';
+  info: {
+    displayName: 'stories';
+  };
+  attributes: {
+    designation: Schema.Attribute.String;
+    employeeImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    name: Schema.Attribute.String;
+    quote: Schema.Attribute.Blocks;
+    thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -668,6 +897,19 @@ export interface SectionsWellbeingSlides extends Struct.ComponentSchema {
       'sections.wellbeing-slide-new',
       false
     >;
+  };
+}
+
+export interface SectionsWomenBrigade extends Struct.ComponentSchema {
+  collectionName: 'components_sections_women_brigades';
+  info: {
+    displayName: 'Women Brigade';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    Gif: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    heading: Schema.Attribute.String;
+    points: Schema.Attribute.Component<'sections.points', true>;
   };
 }
 
@@ -813,6 +1055,18 @@ export interface SharedGalleryItems extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedHouseMoments extends Struct.ComponentSchema {
+  collectionName: 'components_shared_house_moments';
+  info: {
+    displayName: 'House Moments';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    moments: Schema.Attribute.Component<'shared.moments', true>;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -821,6 +1075,16 @@ export interface SharedMedia extends Struct.ComponentSchema {
   };
   attributes: {
     file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+  };
+}
+
+export interface SharedMoments extends Struct.ComponentSchema {
+  collectionName: 'components_shared_moments';
+  info: {
+    displayName: 'Moments';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -925,6 +1189,7 @@ declare module '@strapi/strapi' {
       'sections.activities': SectionsActivities;
       'sections.activities-slides': SectionsActivitiesSlides;
       'sections.activity-slide': SectionsActivitySlide;
+      'sections.apply-now-hero': SectionsApplyNowHero;
       'sections.award-years': SectionsAwardYears;
       'sections.awards': SectionsAwards;
       'sections.awards-and-recognition': SectionsAwardsAndRecognition;
@@ -932,14 +1197,24 @@ declare module '@strapi/strapi' {
       'sections.beyond-work-slide-new': SectionsBeyondWorkSlideNew;
       'sections.beyond-work-slides': SectionsBeyondWorkSlides;
       'sections.category': SectionsCategory;
+      'sections.diversity-and-inclusion-hero': SectionsDiversityAndInclusionHero;
+      'sections.diversity-in-action': SectionsDiversityInAction;
+      'sections.diversity-statistics': SectionsDiversityStatistics;
+      'sections.employee-stories': SectionsEmployeeStories;
+      'sections.employee-stories-hero': SectionsEmployeeStoriesHero;
       'sections.employee-testimonials': SectionsEmployeeTestimonials;
+      'sections.find-your-opportunity': SectionsFindYourOpportunity;
       'sections.gallery-items': SectionsGalleryItems;
       'sections.glimpse-into-our-world': SectionsGlimpseIntoOurWorld;
       'sections.glimpse-item': SectionsGlimpseItem;
       'sections.growth-environment': SectionsGrowthEnvironment;
       'sections.growth-items': SectionsGrowthItems;
       'sections.hero': SectionsHero;
+      'sections.house-concept': SectionsHouseConcept;
+      'sections.house-concept-page': SectionsHouseConceptPage;
+      'sections.houses': SectionsHouses;
       'sections.images': SectionsImages;
+      'sections.initiatives': SectionsInitiatives;
       'sections.inside-our-workplace': SectionsInsideOurWorkplace;
       'sections.items': SectionsItems;
       'sections.join-our-team': SectionsJoinOurTeam;
@@ -953,16 +1228,24 @@ declare module '@strapi/strapi' {
       'sections.life-beyond-job-title': SectionsLifeBeyondJobTitle;
       'sections.made-for-more': SectionsMadeForMore;
       'sections.made-for-more-intro': SectionsMadeForMoreIntro;
+      'sections.meet-the-houses': SectionsMeetTheHouses;
       'sections.new-tabs': SectionsNewTabs;
+      'sections.our-commitment-to-inclusion': SectionsOurCommitmentToInclusion;
       'sections.our-values-section': SectionsOurValuesSection;
+      'sections.our-workplace-culture': SectionsOurWorkplaceCulture;
+      'sections.points': SectionsPoints;
+      'sections.principles': SectionsPrinciples;
       'sections.recognition': SectionsRecognition;
       'sections.recognition-image': SectionsRecognitionImage;
       'sections.recognition-item-new': SectionsRecognitionItemNew;
       'sections.recognition-items': SectionsRecognitionItems;
       'sections.recognition-tab': SectionsRecognitionTab;
+      'sections.slides': SectionsSlides;
       'sections.social-links': SectionsSocialLinks;
+      'sections.statistics': SectionsStatistics;
       'sections.stats-grid': SectionsStatsGrid;
       'sections.stats-section': SectionsStatsSection;
+      'sections.stories': SectionsStories;
       'sections.stories-that-inspire': SectionsStoriesThatInspire;
       'sections.story-items': SectionsStoryItems;
       'sections.tabs': SectionsTabs;
@@ -970,6 +1253,7 @@ declare module '@strapi/strapi' {
       'sections.wellbeing-first': SectionsWellbeingFirst;
       'sections.wellbeing-slide-new': SectionsWellbeingSlideNew;
       'sections.wellbeing-slides': SectionsWellbeingSlides;
+      'sections.women-brigade': SectionsWomenBrigade;
       'sections.workplace-items': SectionsWorkplaceItems;
       'shared.award-item': SharedAwardItem;
       'shared.award-year': SharedAwardYear;
@@ -980,7 +1264,9 @@ declare module '@strapi/strapi' {
       'shared.content-items': SharedContentItems;
       'shared.employee-testimonial-item': SharedEmployeeTestimonialItem;
       'shared.gallery-items': SharedGalleryItems;
+      'shared.house-moments': SharedHouseMoments;
       'shared.media': SharedMedia;
+      'shared.moments': SharedMoments;
       'shared.navigation-item': SharedNavigationItem;
       'shared.navigation-link': SharedNavigationLink;
       'shared.quote': SharedQuote;
