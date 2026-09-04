@@ -336,6 +336,19 @@ export interface SectionsHero extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsHomeJobOpportunities extends Struct.ComponentSchema {
+  collectionName: 'components_sections_home_job_opportunities';
+  info: {
+    displayName: 'Home Job Opportunities';
+  };
+  attributes: {
+    bgImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    buttonText: Schema.Attribute.String;
+    buttonUrl: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsHouseConcept extends Struct.ComponentSchema {
   collectionName: 'components_sections_house_concepts';
   info: {
@@ -906,6 +919,9 @@ export interface SectionsWomenBrigade extends Struct.ComponentSchema {
     displayName: 'Women Brigade';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     description: Schema.Attribute.Blocks;
     Gif: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     heading: Schema.Attribute.String;
@@ -1210,6 +1226,7 @@ declare module '@strapi/strapi' {
       'sections.growth-environment': SectionsGrowthEnvironment;
       'sections.growth-items': SectionsGrowthItems;
       'sections.hero': SectionsHero;
+      'sections.home-job-opportunities': SectionsHomeJobOpportunities;
       'sections.house-concept': SectionsHouseConcept;
       'sections.house-concept-page': SectionsHouseConceptPage;
       'sections.houses': SectionsHouses;

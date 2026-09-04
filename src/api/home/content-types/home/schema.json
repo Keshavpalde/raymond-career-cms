@@ -50,6 +50,11 @@
       "type": "component",
       "component": "sections.awards-and-recognition",
       "repeatable": false
+    },
+    "homeJobOpportunities": {
+      "type": "component",
+      "component": "sections.home-job-opportunities",
+      "repeatable": false
     }
   }
 }

@@ -814,6 +814,10 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
       false
     >;
     hero: Schema.Attribute.Component<'home.hero', false>;
+    homeJobOpportunities: Schema.Attribute.Component<
+      'sections.home-job-opportunities',
+      false
+    >;
     leadershipThoughts: Schema.Attribute.Component<
       'sections.leadership-thoughts',
       false
