@@ -178,6 +178,14 @@ export interface SectionsCategory extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsDirectors extends Struct.ComponentSchema {
+  collectionName: 'components_sections_directors';
+  info: {
+    displayName: 'directors';
+  };
+  attributes: {};
+}
+
 export interface SectionsDiversityAndInclusionHero
   extends Struct.ComponentSchema {
   collectionName: 'components_sections_diversity_and_inclusion_heroes';
@@ -257,6 +265,32 @@ export interface SectionsFindYourOpportunity extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsFunctionHeads extends Struct.ComponentSchema {
+  collectionName: 'components_sections_function_heads';
+  info: {
+    displayName: 'Function Heads';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    designation: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SectionsFunctionalHeads extends Struct.ComponentSchema {
+  collectionName: 'components_sections_functional_heads';
+  info: {
+    displayName: 'Functional Heads';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    functionHeads: Schema.Attribute.Component<'sections.function-heads', true>;
     heading: Schema.Attribute.String;
   };
 }
@@ -1213,6 +1247,7 @@ declare module '@strapi/strapi' {
       'sections.beyond-work-slide-new': SectionsBeyondWorkSlideNew;
       'sections.beyond-work-slides': SectionsBeyondWorkSlides;
       'sections.category': SectionsCategory;
+      'sections.directors': SectionsDirectors;
       'sections.diversity-and-inclusion-hero': SectionsDiversityAndInclusionHero;
       'sections.diversity-in-action': SectionsDiversityInAction;
       'sections.diversity-statistics': SectionsDiversityStatistics;
@@ -1220,6 +1255,8 @@ declare module '@strapi/strapi' {
       'sections.employee-stories-hero': SectionsEmployeeStoriesHero;
       'sections.employee-testimonials': SectionsEmployeeTestimonials;
       'sections.find-your-opportunity': SectionsFindYourOpportunity;
+      'sections.function-heads': SectionsFunctionHeads;
+      'sections.functional-heads': SectionsFunctionalHeads;
       'sections.gallery-items': SectionsGalleryItems;
       'sections.glimpse-into-our-world': SectionsGlimpseIntoOurWorld;
       'sections.glimpse-item': SectionsGlimpseItem;

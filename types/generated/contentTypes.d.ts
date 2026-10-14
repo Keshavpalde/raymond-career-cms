@@ -813,6 +813,10 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
       'sections.employee-testimonials',
       false
     >;
+    functionalHeads: Schema.Attribute.Component<
+      'sections.functional-heads',
+      false
+    >;
     hero: Schema.Attribute.Component<'home.hero', false>;
     homeJobOpportunities: Schema.Attribute.Component<
       'sections.home-job-opportunities',

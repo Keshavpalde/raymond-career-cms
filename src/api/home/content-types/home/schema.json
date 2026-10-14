@@ -55,6 +55,11 @@
       "type": "component",
       "component": "sections.home-job-opportunities",
       "repeatable": false
+    },
+    "functionalHeads": {
+      "type": "component",
+      "component": "sections.functional-heads",
+      "repeatable": false
     }
   }
 }
