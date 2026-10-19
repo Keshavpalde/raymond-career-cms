@@ -623,6 +623,7 @@ export interface ApiDiversityAndInclusionDiversityAndInclusion
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    dhwaniSection: Schema.Attribute.Component<'sections.dhwani-section', false>;
     diversityInAction: Schema.Attribute.Component<
       'sections.diversity-in-action',
       false

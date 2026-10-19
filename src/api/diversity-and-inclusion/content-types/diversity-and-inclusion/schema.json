@@ -40,6 +40,11 @@
       "type": "component",
       "component": "sections.our-workplace-culture",
       "repeatable": false
+    },
+    "dhwaniSection": {
+      "type": "component",
+      "component": "sections.dhwani-section",
+      "repeatable": false
     }
   }
 }

@@ -178,6 +178,21 @@ export interface SectionsCategory extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsDhwaniSection extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dhwani_sections';
+  info: {
+    displayName: 'DhwaniSection';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    description: Schema.Attribute.Blocks;
+    heading: Schema.Attribute.String;
+    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface SectionsDirectors extends Struct.ComponentSchema {
   collectionName: 'components_sections_directors';
   info: {
@@ -277,9 +292,9 @@ export interface SectionsFunctionHeads extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Blocks;
     designation: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String;
-    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    video: Schema.Attribute.Media<'videos'>;
   };
 }
 
@@ -1247,6 +1262,7 @@ declare module '@strapi/strapi' {
       'sections.beyond-work-slide-new': SectionsBeyondWorkSlideNew;
       'sections.beyond-work-slides': SectionsBeyondWorkSlides;
       'sections.category': SectionsCategory;
+      'sections.dhwani-section': SectionsDhwaniSection;
       'sections.directors': SectionsDirectors;
       'sections.diversity-and-inclusion-hero': SectionsDiversityAndInclusionHero;
       'sections.diversity-in-action': SectionsDiversityInAction;
